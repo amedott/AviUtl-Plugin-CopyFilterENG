@@ -1,41 +1,40 @@
-# AviUtl プラグイン - フィルタのコピペ
+# AviUtl Plugin - Copy-Paste Filter
 
-* 1.0.0 by 蛇色 - 2022/04/28 初版
+Original [plugin](https://github.com/hebiiro/AviUtl-Plugin-CopyFilter) by Hebiiro
+i only translated menu items into english. it just works for me:tm:
 
-設定ダイアログのフィルタをコピペできるようにします。
+## how 2 install
 
-## 導入方法
-
-1. 以下のファイルを AviUtl の Plugins フォルダに配置します。
+1. Put this file to your AviUtl's Plugins folder.
 	* CopyFilter.auf
 
-## 使用方法
+## how 2 use
 
-1. 設定ダイアログで右クリックしてコンテキストメニューを出します。
-2. メニュー項目が追加されているはずなので必要なものを選択します。
+1. Right click on a filter effect on ExtendedFilter window
+2. Additional menu items below `<[filter]>` should be there.
 
-## 制限事項
+## limitations
 
-### オブジェクトの分類
+### object classifications
 
-* 映像メディアオブジェクト(グループ制御含む)
-* 映像フィルタオブジェクト
-* 音声メディアオブジェクト
-* 音声フィルタオブジェクト
-* カメラ制御
+* Video Media Object(Can use Grouping)
+* Video Filter Object
+* Audio Media Object
+* Audio Filter Object
+* Camera control
 
-オブジェクトはこれらに分類され、同じ分類のオブジェクト同士でしかコピペはできません。
+Objects are classified into these categories and can only be copied and pasted between objects of the same category.
 
-### 先頭のフィルタ
+### Main filters
 
-先頭のフィルタはカットやコピーはできません。
+u can't copy the main (very top) fiilers
 
-## 動作確認
+## requirements
 
-* (必須) AviUtl 1.10 & 拡張編集 0.92 http://spring-fragrance.mints.ne.jp/aviutl/
-* (共存確認) patch.aul r21 https://scrapbox.io/ePi5131/patch.aul
+* (Need) AviUtl 1.10 & 拡張編集 (ENG: Advanced Editing/Adv.Edit) 0.92 http://spring-fragrance.mints.ne.jp/aviutl/
+* (Can use with) patch.aul r21 https://scrapbox.io/ePi5131/patch.aul
 
-## クレジット
+## credits
 
 * Microsoft Research Detours Package https://github.com/microsoft/Detours
 * aviutl_exedit_sdk https://github.com/ePi5131/aviutl_exedit_sdk
