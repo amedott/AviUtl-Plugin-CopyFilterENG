@@ -300,13 +300,13 @@ IMPLEMENT_HOOK_PROC_NULL(LRESULT, WINAPI, SettingDialogProc, (HWND hwnd, UINT me
 				HMENU menu = g_auin.GetSettingDialogMenu(i);
 				HMENU subMenu = ::GetSubMenu(menu, 0);
 				::AppendMenu(subMenu, MF_SEPARATOR, 0, 0);
-				::AppendMenu(subMenu, MF_STRING, ID_CUT_FILTER, _T("このフィルタを切り取り"));
-				::AppendMenu(subMenu, MF_STRING, ID_CUT_FILTER_ABOVE, _T("このフィルタ以上を切り取り"));
-				::AppendMenu(subMenu, MF_STRING, ID_CUT_FILTER_BELOW, _T("このフィルタ以下を切り取り"));
-				::AppendMenu(subMenu, MF_STRING, ID_COPY_FILTER, _T("このフィルタをコピー"));
-				::AppendMenu(subMenu, MF_STRING, ID_COPY_FILTER_ABOVE, _T("このフィルタ以上をコピー"));
-				::AppendMenu(subMenu, MF_STRING, ID_COPY_FILTER_BELOW, _T("このフィルタ以下をコピー"));
-				::AppendMenu(subMenu, MF_STRING, ID_PASTE_FILTER, _T("フィルタを貼り付け"));
+				::AppendMenu(subMenu, MF_STRING, ID_CUT_FILTER, _T("Cut Filter"));
+				::AppendMenu(subMenu, MF_STRING, ID_CUT_FILTER_ABOVE, _T("Cut Above Filter"));
+				::AppendMenu(subMenu, MF_STRING, ID_CUT_FILTER_BELOW, _T("Cut Below Filter"));
+				::AppendMenu(subMenu, MF_STRING, ID_COPY_FILTER, _T("Copy Filter"));
+				::AppendMenu(subMenu, MF_STRING, ID_COPY_FILTER_ABOVE, _T("Copy Above Filter"));
+				::AppendMenu(subMenu, MF_STRING, ID_COPY_FILTER_BELOW, _T("Copy Below Filter"));
+				::AppendMenu(subMenu, MF_STRING, ID_PASTE_FILTER, _T("Paste Filter"));
 			}
 
 			break;
